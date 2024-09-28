@@ -1,0 +1,25 @@
+public class Grader {
+    public static void main(String[] args) {
+        double averageMarks = 80;  
+        String grade;
+       
+        
+        if (averageMarks >= 93) {
+            grade = "A";
+        } else if (averageMarks >= 85) {
+            grade = "B";
+        } else if (averageMarks >= 80) {
+            grade = "C";
+        } else if (averageMarks >= 75) {
+            grade = "D";
+        } else {
+            grade = "E";
+        }
+       
+        System.out.println("Grade is " + grade);
+
+        // Determine pass or fail
+        String result = (averageMarks >= 75) ? "Pass" : "Fail";
+        System.out.println(result);
+    }
+}
